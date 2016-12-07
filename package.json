@@ -1,7 +1,7 @@
 {
-  "name": "wdio-spec-reporter",
-  "version": "0.0.3",
-  "description": "A WebdriverIO plugin. Report results in 'spec' format.",
+  "name": "step-by-step-reporter",
+  "version": "0.0.1",
+  "description": "A WebdriverIO reporter plugin for Cucumber. Reports results step by step.",
   "main": "build/reporter.js",
   "scripts": {
     "test": "grunt",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/webdriverio/wdio-spec-reporter.git"
+    "url": "git+https://github.com/shkaper/wdio-spec-reporter.git"
   },
   "directories": {
     "lib": "./lib"
@@ -24,7 +24,7 @@
     "wdio-plugin",
     "wdio-reporter"
   ],
-  "author": "Christian Bromann <christian@saucelabs.com>",
+  "author": "Shkaper",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/webdriverio/wdio-spec-reporter/issues"
@@ -32,6 +32,7 @@
   "homepage": "https://github.com/webdriverio/wdio-spec-reporter#readme",
   "dependencies": {
     "babel-runtime": "^5.8.25",
+    "colors": "1.1.2",
     "humanize-duration": "^3.9.0"
   },
   "devDependencies": {

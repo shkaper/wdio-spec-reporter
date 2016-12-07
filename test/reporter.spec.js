@@ -56,7 +56,7 @@ describe('spec reporter', () => {
 
     describe('getBrowserCombo', () => {
         it('should return verbose desktop combo', () => {
-            reporter.getBrowserCombo({
+            StepByStepReporter.getBrowserCombo({
                 browserName: 'chrome',
                 version: 50,
                 platform: 'Windows 8.1'
@@ -64,7 +64,7 @@ describe('spec reporter', () => {
         })
 
         it('should return preface desktop combo', () => {
-            reporter.getBrowserCombo({
+            StepByStepReporter.getBrowserCombo({
                 browserName: 'chrome',
                 version: 50,
                 platform: 'Windows 8.1'
@@ -72,7 +72,7 @@ describe('spec reporter', () => {
         })
 
         it('should return verbose mobile combo', () => {
-            reporter.getBrowserCombo({
+            StepByStepReporter.getBrowserCombo({
                 deviceName: 'iPhone 6 Plus',
                 platformVersion: '9.2',
                 platformName: 'iOS'
@@ -80,7 +80,7 @@ describe('spec reporter', () => {
         })
 
         it('should return preface mobile combo', () => {
-            reporter.getBrowserCombo({
+            StepByStepReporter.getBrowserCombo({
                 deviceName: 'iPhone 6 Plus',
                 platformVersion: '9.2',
                 platformName: 'iOS'
@@ -88,7 +88,7 @@ describe('spec reporter', () => {
         })
 
         it('should return verbose mobile combo executing an app', () => {
-            reporter.getBrowserCombo({
+            StepByStepReporter.getBrowserCombo({
                 deviceName: 'iPhone 6 Plus',
                 platformVersion: '9.2',
                 platformName: 'iOS',
@@ -97,7 +97,7 @@ describe('spec reporter', () => {
         })
 
         it('should return preface mobile combo executing an app', () => {
-            reporter.getBrowserCombo({
+            StepByStepReporter.getBrowserCombo({
                 deviceName: 'iPhone 6 Plus',
                 platformVersion: '9.2',
                 platformName: 'iOS',
@@ -106,7 +106,7 @@ describe('spec reporter', () => {
         }, false)
 
         it('should return verbose mobile combo executing a browser', () => {
-            reporter.getBrowserCombo({
+            StepByStepReporter.getBrowserCombo({
                 deviceName: 'iPhone 6 Plus',
                 platformVersion: '9.2',
                 platformName: 'iOS',
@@ -115,7 +115,7 @@ describe('spec reporter', () => {
         })
 
         it('should return preface mobile combo executing a browser', () => {
-            reporter.getBrowserCombo({
+            StepByStepReporter.getBrowserCombo({
                 deviceName: 'iPhone 6 Plus',
                 platformVersion: '9.2',
                 platformName: 'iOS',
