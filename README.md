@@ -10,15 +10,9 @@ The easiest way is to keep `wdio-spec-reporter` as a devDependency in your `pack
 ```json
 {
   "devDependencies": {
-    "wdio-spec-reporter": "~0.0.1"
+    "step-by-step-reporter": "https://github.com/shkaper/wdio-spec-reporter.git#master"
   }
 }
-```
-
-You can simple do it by:
-
-```bash
-npm install wdio-spec-reporter --save-dev
 ```
 
 Instructions on how to install `WebdriverIO` can be found [here](http://webdriver.io/guide/getstarted/install.html).
@@ -30,9 +24,11 @@ to the array.
 
 ```js
 // wdio.conf.js
+const StepByStepReporter = require('step-by-step-reporter')
+
 module.exports = {
   // ...
-  reporters: ['dot', 'spec'],
+  reporters: [StepByStepReporter],
   // ...
 };
 ```
