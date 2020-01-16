@@ -19,8 +19,7 @@ Instructions on how to install `WebdriverIO` can be found [here](http://webdrive
 
 ## Configuration
 
-Following code shows the default wdio test runner configuration. Just add `'spec'` as reporter
-to the array.
+To use this reporter, require it in your wdio.conf.js and add to `reporters` array:
 
 ```js
 // wdio.conf.js
